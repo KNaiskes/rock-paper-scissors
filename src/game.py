@@ -1,4 +1,5 @@
 from player import Player
+from computer import Computer
 
 def menu(user_option):
     try:
@@ -12,9 +13,11 @@ def menu(user_option):
     except ValueError:
         print('An integer is the only valid option')
 
-
+computer = Computer()
 print('Welcome!\nEnter your username in order to play: ')
 player = Player(input())
 
 print('Make a guess!: (rock, paper, scissors)')
 player.get_player_guess(input())
+
+print(computer.get_guess())
