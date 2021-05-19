@@ -13,7 +13,6 @@ class Player:
             guess = input().lower()
 
         self.guess = guess.lower()
-        print(self.guess)
 
     def get_score(self):
-        return f'{self.player_name} is: {self.score}'
+        return f'{self.player_name} score is: {self.score}'
