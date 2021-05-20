@@ -30,15 +30,13 @@ def check_result(human_player, computer_player):
 
 computer = Computer()
 
-print('Welcome!\nEnter your username in order to play: ')
-player = Player(input())
+player = Player(input('Welcome!\nEnter your username in order to play: '))
 
 while True:
     print('Make a guess!: (rock, paper, scissors)')
     player.set_guess(input())
 
     check_result(player, computer)
-
-    print(computer.get_guess())
-    print(computer.get_score())
-    print(f'player score {player.get_score()}')
+    print('==========')
+    print(f'Score: {player.get_score()} - {computer.get_score()}')
+    print('==========')
