@@ -1,18 +1,6 @@
 from player import Player
 from computer import Computer
 
-def menu(user_option):
-    try:
-        user_option = int(user_option)
-        if user_option == 1:
-            print('Enter new user name')
-        elif user_option == 2:
-            print('Play again')
-        elif user_option == 3:
-            print('Exit')
-    except ValueError:
-        print('An integer is the only valid option')
-
 def check_result(human_player, computer_player):
     if human_player.get_guess() == computer_player.get_guess():
         print('[Draw] Both you and the computer guessed the same!')
