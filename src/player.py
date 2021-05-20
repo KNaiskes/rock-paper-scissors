@@ -21,4 +21,4 @@ class Player:
         self.score += points
 
     def get_score(self):
-        return f'{self.player_name} score is: {self.score}'
+        return f'{self.player_name}\'s score is: {self.score}'
