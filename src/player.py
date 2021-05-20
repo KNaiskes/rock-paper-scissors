@@ -6,7 +6,7 @@ class Player:
         self.score = 0
         self.guess = ''
 
-    def get_player_guess(self, guess):
+    def set_guess(self, guess):
 
         while(guess not in self.valid_guesses):
             print(f'Valid options are: {", ".join(self.valid_guesses)}')
