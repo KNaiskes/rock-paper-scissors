@@ -14,5 +14,11 @@ class Player:
 
         self.guess = guess.lower()
 
+    def get_guess(self):
+        return self.guess
+
+    def set_score(self, points):
+        self.score += points
+
     def get_score(self):
         return f'{self.player_name} score is: {self.score}'
