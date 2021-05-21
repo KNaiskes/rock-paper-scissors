@@ -2,6 +2,7 @@
 
 An OOP (-ish) implementation of the game rock, paper, scissors
 
+User is able to play this game against the computer which is randomly picking one of the three options
 
 ## Quick Start
 
